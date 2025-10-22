@@ -13,7 +13,7 @@ public class Main {
 
         String word18 = sc.nextLine();
         int aAppeared = 0;
-        for (int i = 0 ; i < word18.length()-1 ; i++){
+        for (int i = 0 ; i < word18.length() ; i++){
             if(word18.charAt(i) == 'a'){
                 aAppeared++;
             }
@@ -206,8 +206,6 @@ public class Main {
 
         try {
             evenOdd(sc);
-        }catch (ArithmeticException e){
-            System.out.println(e.getMessage());
         }catch (InputMismatchException e){
             System.out.println("You didnt enter a number");
         }
@@ -306,7 +304,7 @@ public class Main {
         if(firstNum2 ==0){
             throw new ArithmeticException("Any number multiplied by 0 is 0");
         }
-        for (int i =0; i<10;i++){
+        for (int i =0; i <= 10;i++){
             System.out.println(firstNum2+" * "+i+" = "+(firstNum2*i));
         }
     }
@@ -321,12 +319,9 @@ public class Main {
         System.out.println("Perimeter is: " + (2 * 3.14*radius));
     }
 
-    static void evenOdd(Scanner sc) throws ArithmeticException {
+    static void evenOdd(Scanner sc) {
         System.out.println("Enter a number");
         int first7 = sc.nextInt();
-        if(first7 ==0){
-            throw new ArithmeticException("Zero is not even or odd number");
-        }
         if(first7 % 2 ==0){
             System.out.println("The number is even");
         }else System.out.println("The number is odd");
