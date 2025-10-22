@@ -6,7 +6,6 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-
         //18 - Determine and print the number of times the character ‘a’ appears in the input
         //entered by the user.
 
