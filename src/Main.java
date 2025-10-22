@@ -29,8 +29,6 @@ public class Main {
         int smallest = 0;
         System.out.println("Enter how many numbers you want to check");
         try {
-
-
             int count = sc.nextInt();
             while (count != 0) {
                 int temp = sc.nextInt();
@@ -40,7 +38,7 @@ public class Main {
                 if (temp < smallest) {
                     smallest = temp;
                 }
-                count++;
+                count--;
             }
         }catch (Exception e){
             System.out.println("You didnt enter integer number.");
@@ -138,7 +136,6 @@ public class Main {
         //12. Write a Java program to convert seconds to hours, minutes and seconds.
         try {
 
-
             System.out.println("Enter second to convert to hours");
             int totalSecs = sc.nextInt();
             int hours = (totalSecs / 3600) % 24;
@@ -187,8 +184,6 @@ public class Main {
         //character in the given index.
 
         try {
-
-
             System.out.println("Enter a String");
             String word9 = sc.nextLine();
             System.out.println("Enter the number of the index:");
